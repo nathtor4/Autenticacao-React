@@ -78,7 +78,7 @@ export default function Login({onLogin}) {
                         {errors?.login && <p className="padrao-msg-error">{errors?.login?.message}</p>  }
                     </div>
                     <div className="mb-4 ">
-                        <label htmlFor="password" className="block mb-1 mr-2">Senha:</label>
+                        <label htmlFor="senha" className="block mb-1 mr-2">Senha:</label>
                         <input 
                           type="password" 
                           id="senha" 
