@@ -6,7 +6,7 @@ import * as yup from "yup";
 import Botao from "../Botao/Botao";
 import {mensagemError} from "../Mensagem/Mensagem";
 
-export default function Login() {
+export default function Login({onLogin}) {
 
     const navigate = useNavigate();
 
@@ -36,7 +36,11 @@ export default function Login() {
 
             sessionStorage.setItem('token', token);
 
-            navigate("projeto-piloto")                   
+            if(onLogin){
+                onLogin()
+            }
+    
+            navigate("projeto-piloto");                   
 
             reset({
                 login: '',
