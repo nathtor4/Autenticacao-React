@@ -4,8 +4,10 @@ import MenuLateral from "../../componentes/MenuLateral/MenuLateral";
 import Rodape from "../../componentes/Rodape/Rodape";
 
 export default function PaginaBase() {
+   
+
     return(
-        <>
+        <div>
             <div className="flex h-screen">
                 <MenuLateral />
                 <div className="flex-1">
@@ -14,6 +16,6 @@ export default function PaginaBase() {
                 </div>
             </div>
             <Rodape />
-        </>
+        </div>
     )
 }

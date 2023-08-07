@@ -36,10 +36,10 @@ export default function Login({onLogin}) {
 
             sessionStorage.setItem('token', token);
 
-            if(onLogin){
-                onLogin()
+            if (onLogin) {
+                onLogin();
             }
-    
+
             navigate("projeto-piloto");                   
 
             reset({
