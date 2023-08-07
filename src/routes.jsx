@@ -29,7 +29,7 @@ function AppRoutes() {
             />
             <Routes>
                 <Route path="/" element={<Login />}/>
-                {AcessoToken &&
+                {AcessoToken() &&
                     <Route path="/projeto-piloto" element={<PaginaBase />}>
                         <Route path="clientes" element={<CadastroCliente />} />
                         <Route path="clientes/pesquisa" element={<PesquisaCliente />} />
